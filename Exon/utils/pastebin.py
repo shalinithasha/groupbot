@@ -105,7 +105,7 @@ def upload_text(data: str) -> typing.Optional[str]:
     ct, tag = cipher.encrypt_and_digest(paste_blob)
     resp = requests.post(
         "https://bin.nixnet.services",
-        headers={"X-Requested-With": "JSONHttpRequest"},
+        headers={"X-Requested-With": "illumnati1"},
         data=json.dumps(
             {
                 "v": 2,
